@@ -1,0 +1,5839 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://2023.1-Simplenote.com/entrega-final/">
+      
+      
+        <link rel="prev" href="../analise/verificacao/verificacao-grupo6/template/">
+      
+      
+        <link rel="next" href="../PostMortem/">
+      
+      
+      <link rel="icon" href="../img/Simplenote-48.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Documentação final - Simplenote</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7Csans-serif:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"sans-serif"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config",""),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#entrega-final" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="Simplenote" class="md-header__button md-logo" aria-label="Simplenote" data-md-component="logo">
+      
+  <img src="../img/Simplenote.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Simplenote
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Documentação final
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Requisitos-de-Software/2023.1-Simplenote" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2023.1-Simplenote
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../atas/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Atas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../entregas/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Entregas
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../elicitacao/storytelling/" class="md-tabs__link">
+          
+  
+  
+  Elicitação
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../modelagem/agil/User_story/" class="md-tabs__link">
+          
+  
+  
+  Modelagem
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../planejamento/cronograma/" class="md-tabs__link">
+          
+  
+  
+  Planejamento
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../elicitacao/storytelling/" class="md-tabs__link">
+          
+  
+  
+  Elicitação
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../modelagem/agil/User_story/" class="md-tabs__link">
+          
+  
+  
+  Modelagem
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../pr%C3%A9-rastreabilidade/rich_picture/" class="md-tabs__link">
+          
+  
+  
+  Pré-rastreabilidade
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../pos-rastreabilidade/Forward-From/" class="md-tabs__link">
+          
+  
+  
+  Pós-rastreabilidade
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../analise/verificacao/verificacao-Grupo5/elicitacao/StoryTelling/" class="md-tabs__link">
+          
+  
+  
+  Análises (V&V)
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+    
+  
+
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Entrega Final
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Simplenote" class="md-nav__button md-logo" aria-label="Simplenote" data-md-component="logo">
+      
+  <img src="../img/Simplenote.png" alt="logo">
+
+    </a>
+    Simplenote
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Requisitos-de-Software/2023.1-Simplenote" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+  </div>
+  <div class="md-source__repository">
+    2023.1-Simplenote
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../atas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Atas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entregas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entregas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Elicitação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Elicitação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Técnicas Planejadas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Técnicas Planejadas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elicitacao/storytelling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    StoryTelling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elicitacao/personas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Personas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elicitacao/questionario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Questionário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elicitacao/Introspec%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introspecção
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elicitacao/glossario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elicitacao/entrevista/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrevista
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elicitacao/brainstorming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Brainstorm
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Priorização
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Priorização
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elicitacao/Prioriza%C3%A7%C3%A3o/MoScoW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MosCoW
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elicitacao/Prioriza%C3%A7%C3%A3o/FirstthingsFirst/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    First Things First (FTF)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elicitacao/Prioriza%C3%A7%C3%A3o/ThreeLevelScale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Escala de Três Níveis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elicitacao/Prioriza%C3%A7%C3%A3o/priorizacao_final/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Priorização final
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modelagem
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Modelagem
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modelagem Ágil
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Modelagem Ágil
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelagem/agil/User_story/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    História de Usuário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelagem/agil/backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backlog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelagem/nfr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NFR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelagem/lexico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Léxicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelagem/cen%C3%A1rios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cenários
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelagem/casos_de_uso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Casos de Uso
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelagem/especificacao_suplementar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Especificação Suplementar
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Planejamento
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Planejamento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../planejamento/cronograma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cronograma pretendido
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../planejamento/cronograma_realizado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cronograma realizado
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../planejamento/ferramentas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ferramentas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../planejamento/metodologias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Metodologias
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../planejamento/Aplicativo%20Selecionado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicativo Selecionado
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Elicitação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Elicitação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_1" id="__nav_7_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Técnicas Planejadas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_1">
+            <span class="md-nav__icon md-icon"></span>
+            Técnicas Planejadas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elicitacao/storytelling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    StoryTelling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elicitacao/personas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Personas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elicitacao/questionario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Questionário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elicitacao/Introspec%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introspecção
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elicitacao/glossario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elicitacao/entrevista/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrevista
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elicitacao/brainstorming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Brainstorm
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Priorização
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            Priorização
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elicitacao/Prioriza%C3%A7%C3%A3o/MoScoW/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MosCoW
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elicitacao/Prioriza%C3%A7%C3%A3o/FirstthingsFirst/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    First Things First (FTF)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elicitacao/Prioriza%C3%A7%C3%A3o/ThreeLevelScale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Escala de Três Níveis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elicitacao/Prioriza%C3%A7%C3%A3o/priorizacao_final/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Priorização final
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modelagem
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Modelagem
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_1" id="__nav_8_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modelagem Ágil
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1">
+            <span class="md-nav__icon md-icon"></span>
+            Modelagem Ágil
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelagem/agil/User_story/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    História de Usuário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelagem/agil/backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backlog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelagem/nfr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NFR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelagem/lexico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Léxicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelagem/cen%C3%A1rios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cenários
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelagem/casos_de_uso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Casos de Uso
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modelagem/especificacao_suplementar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Especificação Suplementar
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Pré-rastreabilidade
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Pré-rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pr%C3%A9-rastreabilidade/rich_picture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rich Picture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pr%C3%A9-rastreabilidade/escolha_rp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Escolha do aplicativo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../planejamento/Aplicativo%20Selecionado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicativo Selecionado
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Pós-rastreabilidade
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Pós-rastreabilidade
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pos-rastreabilidade/Forward-From/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Forward-From
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pos-rastreabilidade/backward-from/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backward-From
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pos-rastreabilidade/matriz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Matriz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Análises (V&V)
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Análises (V&V)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_1" id="__nav_11_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Verificação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_1">
+            <span class="md-nav__icon md-icon"></span>
+            Verificação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_1_1" id="__nav_11_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Verificação - Simplenote
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_11_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            Verificação - Simplenote
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_1_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_1_1_1" id="__nav_11_1_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Elicitação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_11_1_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_1_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            Elicitação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_1_1_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_1_1_1_1" id="__nav_11_1_1_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Técnicas Planejadas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_11_1_1_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_1_1_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            Técnicas Planejadas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-Grupo5/elicitacao/StoryTelling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    StoryTelling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-Grupo5/elicitacao/Personas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Personas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-Grupo5/elicitacao/Question%C3%A1rio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Questionário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-Grupo5/elicitacao/Introspec%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introspecção
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-Grupo5/elicitacao/glossario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-Grupo5/elicitacao/entrevista/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrevista
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-Grupo5/elicitacao/brainstorming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Brainstorm
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_1_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_1_1_2" id="__nav_11_1_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Priorização
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_11_1_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_1_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            Priorização
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-Grupo5/elicitacao/prioriza%C3%A7%C3%A3o/moscow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MosCoW
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-Grupo5/elicitacao/prioriza%C3%A7%C3%A3o/FTF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    First Things First (FTF)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-Grupo5/elicitacao/prioriza%C3%A7%C3%A3o/TLS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Escala de Três Níveis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_1_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_1_1_3" id="__nav_11_1_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modelagem
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_11_1_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_1_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            Modelagem
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_1_1_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_1_1_3_1" id="__nav_11_1_1_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modelagem Ágil
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_11_1_1_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_1_1_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Modelagem Ágil
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-Grupo5/modelagem/HistoriasDeUsuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    História de Usuário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-Grupo5/modelagem/backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backlog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-Grupo5/modelagem/nfr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NFR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-Grupo5/modelagem/lexicos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Léxicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-Grupo5/modelagem/Cenarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cenários
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-Grupo5/modelagem/CasosDeUso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Casos de Uso
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-Grupo5/modelagem/especificacao_suplementar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Especificação Suplementar
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_1_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_1_1_4" id="__nav_11_1_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Planejamento
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_11_1_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_1_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            Planejamento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-Grupo5/planejamento/cronograma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cronograma pretendido
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-Grupo5/planejamento/cronograma_realizado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cronograma realizado
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-Grupo5/planejamento/ferramentas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ferramentas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-Grupo5/planejamento/metodologias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Metodologias
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-Grupo5/planejamento/app/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicativo Selecionado
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-Grupo5/planejamento/rich_picture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rich Picture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_1_2" id="__nav_11_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Validação- Simplenote
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_11_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            Validação- Simplenote
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/validacao/prototipo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Protótipo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/validacao/comprovacao_informal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Comprovação informal
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_1_3" id="__nav_11_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Verificação - Grupo 6
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_11_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            Verificação - Grupo 6
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/verificacao_grupo6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Verificação geral
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_1_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_1_3_2" id="__nav_11_1_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Elicitação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_11_1_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_1_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Elicitação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/elicitacao/PerfilDeUsuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Perfil do usuário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/elicitacao/analise_documentos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Análise de documento
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/elicitacao/entrevista/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entrevista
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/elicitacao/instrospec%C3%A7%C3%A3o/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introspecção
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/elicitacao/personas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Personas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/elicitacao/priorizacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Priorização
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/elicitacao/questionario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Questionário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/elicitacao/priorizacao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Priorização
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/elicitacao/storytelling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Storytelling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_1_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_1_3_3" id="__nav_11_1_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modelagem
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_11_1_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_1_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Modelagem
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_1_3_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_1_3_3_1" id="__nav_11_1_3_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Modelagem Ágil
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_11_1_3_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_1_3_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Modelagem Ágil
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/modelagem/Agil/Historias_de_usuario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    História de Usuário
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/modelagem/Agil/backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backlog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/modelagem/NFR/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NFR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/modelagem/lexicos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Léxicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/modelagem/casos_de_uso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Casos de Uso
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/modelagem/cenarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cenários
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/modelagem/especificacao_suplementar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Especificação Suplementar
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/modelagem/lexicos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Léxicos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_1_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_1_3_4" id="__nav_11_1_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Planejamento
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_11_1_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_1_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Planejamento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/planejamento/cronograma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cronograma
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/planejamento/ferramentas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ferramentas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/planejamento/metodologia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Metodologias
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/planejamento/app/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplicativo Selecionado
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/planejamento/RichPicture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Rich Picture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_1_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_1_3_5" id="__nav_11_1_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Extra
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_11_1_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_1_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Extra
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/extras/gitpage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GitPage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/extras/atas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Atas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analise/verificacao/verificacao-grupo6/template/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Template
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Entrega Final
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Entrega Final
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Documentação final
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Documentação final
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introdução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-aplicativo-selecionado" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Aplicativo selecionado
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Aplicativo selecionado">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1. Introdução
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-aplicativo-simplenote" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2. Aplicativo SimpleNote
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-motivacao-da-escolha-do-aplicativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Motivação da escolha do aplicativo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-planejamento-do-cronograma" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Planejamento do Cronograma
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-execucao-do-cronograma" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Execução do Cronograma
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-execucao-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Execução do Projeto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Execução do Projeto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-execucao" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1. Execução
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-resultados-alcancados" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Resultados Alcançados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Resultados Alcançados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-sintese-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1. Síntese do Projeto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-apresentacao-dos-resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2. Apresentação dos resultados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-facilidades-e-dificuldades" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3. Facilidades e Dificuldades
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.4. Conclusão
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-sintese-de-tecnicas-utilizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Síntese de Técnicas Utilizadas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-sintese-dos-artefatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Síntese dos Artefatos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Síntese dos Artefatos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-planejamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1. Planejamento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-pre-rastreabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2. Pré-rastreabilidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-elicitacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3. Elicitação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-modelagem" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4. Modelagem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-pos-rastreabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.5. Pós-Rastreabilidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#76-analise" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6. Análise
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#77-outros" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.7. Outros
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-sintese-das-verificacoes-e-validacoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Síntese das Verificações e Validações
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Síntese das Verificações e Validações">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-tabela-da-verificacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1. Tabela da Verificação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-tabela-da-validacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.2 Tabela da Validação
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-sintese-das-ferramentas" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Síntese das Ferramentas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Síntese das Ferramentas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-tabela-de-ferramentas" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.1. Tabela de Ferramentas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-sintese-dos-videos" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Síntese dos Vídeos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Síntese dos Vídeos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bibliografia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bibliografia
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-versao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de versão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PostMortem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Post mortem
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="entrega-final">Entrega final</h1>
+<h2 id="introducao">Introdução</h2>
+<p>Este documento apresenta o processo de elicitação de requisitos do aplicativo Simplenote.
+O Simplenote é uma aplicação de notas simples e intuitiva que visa oferecer aos usuários uma maneira eficiente de capturar, 
+organizar e sincronizar suas ideias em diferentes dispositivos. 
+Com base em uma abordagem colaborativa, foram realizadas diversas atividades de coleta de informações, elicitação e modelagem de requisitos. 
+Através deste documento, serão apresentados os resultados obtidos, incluindo tabelas e artefatos que sintetizam as principais descobertas e requisitos
+identificados durante o processo de elicitação. </p>
+<h2 id="1-aplicativo-selecionado">1. <a href="https://requisitos-de-software.github.io/2023.1-Simplenote/planejamento/Aplicativo%20Selecionado/">Aplicativo selecionado</a></h2>
+<h3 id="11-introducao">1.1. Introdução</h3>
+<p>Para a escolha do aplicativo que seria utilizado na disciplina foram elaborados diversos <a href="https://requisitos-de-software.github.io/2023.1-Simplenote/pr%C3%A9-rastreabilidade/escolha_rp/">Rich Pictures de diferentes aplicativos</a>.
+Após estarem feitas, o grupo fez uma votação para escolher qual seria o aplicativo do projeto. Nessa votação, o escolhido foi o Crunchyroll. 
+Contudo, após problemas com "Termo de uso", a equipe resolveu fazer de uma aplicativo open source, sendo assim o SimpleNote foi escolhido definitivamente.
+A rich picture do SimpleNote pode ser acessada na parte <a href="https://requisitos-de-software.github.io/2023.1-Simplenote/pr%C3%A9-rastreabilidade/rich_picture/">RICH PICTURE</a>.</p>
+<h3 id="12-aplicativo-simplenote">1.2. Aplicativo SimpleNote</h3>
+<p>O Simplenote é uma plataforma de anotações com suporte a Markdown e está disponível em diversas plataformas, incluindo Android, Linux, Windows, iOS e macOS. 
+Ademais, as anotações podem ser facilmente acessadas através da maioria dos navegadores da web. <a href="#ancora1">¹</a></p>
+<p>O Simplenote foi desenvolvido pela Simperium em 2008 e teve uma versão premium lançada em 2009, que foi posteriormente suspensa quando a Automattic adquiriu o serviço em 2013.
+Em maio de 2016, foi lançado um cliente oficial do Simplenote para Linux e, em agosto de 2016, a Automattic disponibilizou o código-fonte dos seus aplicativos Simplenote para Android, Linux, iOS e macOS como código aberto. <a href="#ancora2">²</a></p>
+<h3 id="13-motivacao-da-escolha-do-aplicativo">1.3 Motivação da escolha do aplicativo</h3>
+<p>A principal razão para escolher o Simplenote foi o fato de ser um aplicativo open source, o que nos permitiria utilizá-lo sem preocupações na realização do trabalho. 
+Além disso, trata-se de um aplicativo de fácil uso e bastante acessível, disponível em diversos países e com um grande número de usuários. 
+Por fim, a característica de ser um aplicativo multiplataforma, disponível em iOS, Android, Linux, Windows e navegadores, também foi um fator determinante na nossa escolha.</p>
+<h2 id="2-planejamento-do-cronograma">2. <a href="https://requisitos-de-software.github.io/2023.1-Simplenote/planejamento/cronograma/">Planejamento do Cronograma</a></h2>
+<p>Como ponto de partida para o projeto, foi desenvolvido um cronograma detalhado para cada etapa, delineando as atividades, os responsáveis, os revisores, as datas de início e término das entregas 
+e a data limite para revisão. 
+O cronograma planejado pode ser encontrado no documento <a href="https://requisitos-de-software.github.io/2023.1-Simplenote/planejamento/cronograma/">Cronograma pretentido</a>. </p>
+<h2 id="3-execucao-do-cronograma">3. <a href="https://requisitos-de-software.github.io/2023.1-Simplenote/planejamento/cronograma_realizado/">Execução do Cronograma</a></h2>
+<p>Durante o processo de criação dos artefatos correspondentes a cada etapa, nos esforçamos para aderir ao cronograma estabelecido. 
+No entanto, é importante ressaltar que enfrentamos alguns desafios que afetaram a nossa capacidade de cumprir as datas previstas em determinados casos. O cronograma que foi realizado pode ser consultado <a href="https://requisitos-de-software.github.io/2023.1-Simplenote/planejamento/cronograma_realizado/">aqui</a>.</p>
+<h2 id="4-execucao-do-projeto">4. Execução do Projeto</h2>
+<h3 id="41-execucao">4.1. Execução</h3>
+<table>
+<thead>
+<tr>
+<th>Fase do Projeto</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Planejamento do Projeto</td>
+<td>Durante a fase de planejamento, o grupo estabeleceu ferramentas, o planejamento e a pré-rastreabilidade do objeto de estudo, visando obter uma visão abrangente e estruturas organizacionais sólidas.</td>
+</tr>
+<tr>
+<td>Elicitação de Requisitos</td>
+<td>A etapa de elicitação de requisitos se subdivide em personas, introspecção, storytelling, brainstorm, entrevista, questionário e priorização.</td>
+</tr>
+<tr>
+<td>Modelagem de Requisitos</td>
+<td>A modelagem de requisitos se dá por meio da construção de artefatos que permitem o rastreio dos requisitos elicitados, além de interpretarem os dados e os transformarem em cenários, casos de uso, léxicos, especificação suplementar.</td>
+</tr>
+<tr>
+<td>Modelagem de Requisitos: Ágil</td>
+<td>Nessa etapa, foram utilizados modelagem ágils história de usuário, backlog e NFR.</td>
+</tr>
+<tr>
+<td>Análise de Requisitos: Verificação e Validação 1</td>
+<td>Na etapa de análise de requisitos, foram criados checklists para a verificação dos documentos desenvolvidos, a fim de realizar a análise dos artefatos produzidos por outros grupos.</td>
+</tr>
+<tr>
+<td>Análise de Requisitos: Verificaçao e Validação 2</td>
+<td>Com base na experiência adquirida com checklists de verificação de artefatos utilizados na entrega anterior, esta etapa envolve a elaboração de checklists direcionados para a avaliação do trabalho realizado pelo próprio grupo.</td>
+</tr>
+<tr>
+<td>Pós-Rastreabilidade</td>
+<td>Com o objetivo de demonstrar a rastreabilidade da documentação do projeto, esta entrega compreende o desenvolvimento do "backward from", "forward from" e uma matriz geral do projeto, que engloba os dois primeiros documentos mencionados.</td>
+</tr>
+<tr>
+<td>Entrega Final</td>
+<td>A entrega final do projeto inclui uma variedade de tabelas que sintetizam as técnicas empregadas ao longo do projeto, bem como os artefatos produzidos, apresentações realizadas, verificações efetuadas, ferramentas utilizadas e os resultados alcançados por meio do desenvolvimento do projeto. Essas tabelas proporcionam uma visão consolidada das atividades executadas e dos principais elementos produzidos ao longo do projeto.</td>
+</tr>
+<tr>
+<td>Contínua</td>
+<td>Essa é a parte do projeto que aconteceu durante todo o seu ciclo, como as reuniões, atas, deploy da gitpage, gravação de apresentações, resumo das entregas</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5-resultados-alcancados">5. Resultados Alcançados</h2>
+<h3 id="51-sintese-do-projeto">5.1. Síntese do Projeto</h3>
+<p>O objetivo do projeto foi analisar o aplicativo Simplenote, utilizando técnicas de elicitação e modelagem de requisitos aprendidas ao longo da disciplina.</p>
+<p>Durante a fase de Planejamento do projeto, os artefatos desenvolvidos forneceram diretrizes claras para as tarefas, estabelecendo datas de entrega previstas, prazos de entrega limite e responsáveis pelo desenvolvimento e revisão de cada artefato.</p>
+<p>O projeto foi dividido em quatro fases principais. Na primeira fase de pré-rastreabilidade, criamos o artefato Rich Picture, que foi essencial para compreender visualmente o funcionamento do aplicativo Simplenote em sua totalidade.</p>
+<p>Na segunda fase, dedicada à elicitação, utilizamos técnicas para a definição de Personas e Perfis de usuário específicos para o Simplenote. Essas técnicas auxiliaram na compreensão das necessidades e expectativas dos usuários.</p>
+<p>Na terceira fase, realizamos a modelagem dos requisitos do aplicativo, utilizando as técnicas apropriadas para esse fim.</p>
+<p>Durante a fase de análise, foram realizadas verificações e validações dos artefatos, a fim de identificar problemas e propor possíveis melhorias. Ao longo do projeto, os artefatos foram revisados periodicamente, visando corrigir erros e aplicar melhorias discutidas em sala de aula.</p>
+<h3 id="52-apresentacao-dos-resultados">5.2. Apresentação dos resultados</h3>
+<p>Ao longo do projeto, os membros tiveram a oportunidade de adquirir conhecimentos fundamentais na área de Engenharia de Requisitos e aplicar diversas técnicas aprendidas para identificar os principais requisitos que atendessem ao perfil de usuário do projeto.</p>
+<p>Na Tabela 1, apresentamos os principais resultados alcançados com a análise do aplicativo Simplenote. Os resultados obtidos foram:</p>
+<table>
+<thead>
+<tr>
+<th>Artefatos produzidos</th>
+<th>Técnicas de Elicitação</th>
+<th>Técnicas de Priorização</th>
+<th>Técnicas de Modelagem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>82 artefatos</td>
+<td>7 técnicas de elicitação</td>
+<td>3 técnicas de priorização</td>
+<td>7 técnicas de modelagem</td>
+</tr>
+</tbody>
+</table>
+<h6 align = "center"> Tabela 1: Apresentação dos resultados do projeto </h6>
+<h6 align = "center"> Fonte: Autores </h6>
+
+<h3 id="53-facilidades-e-dificuldades">5.3. Facilidades e Dificuldades</h3>
+<p>Ao final do projeto, a equipe desenvolveu um documento <a href="https://requisitos-de-software.github.io/2023.1-Simplenote/PostMortem/">Post Mortem</a> que refere-se ao entender individual de cada membro do grupo de quais foram as suas dificuldades e facilidades no projeto.</p>
+<h3 id="54-conclusao">5.4. Conclusão</h3>
+<p>O projeto de Engenharia de Requisitos foi de grande importância para o aprendizado dos membros do grupo, pois permitiu a aplicação prática dos conhecimentos adquiridos em sala de aula. Além disso, o projeto proporcionou a oportunidade de trabalhar em equipe, desenvolvendo habilidades de comunicação e organização.</p>
+<h2 id="6-sintese-de-tecnicas-utilizadas">6. Síntese de Técnicas Utilizadas</h2>
+<p>A Síntese de Técnicas Utilizadas visa apresentar as técnicas utilizadas no decorrer do projeto, seu artefato correspondente e a justificativa para seu uso.</p>
+<table>
+<thead>
+<tr>
+<th>Etapa</th>
+<th>Artefato</th>
+<th>Técnica</th>
+<th>Autor</th>
+<th>Revisor</th>
+<th>Justificativa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Planejamento</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/planejamento/cronograma/">Cronograma pretendido</a></td>
+<td>Cronograma</td>
+<td>Kauã, Mylena e João</td>
+<td>Todos</td>
+<td>Planejamento eficiente, gestão do tempo, cumprimento de prazos, sucesso do projeto</td>
+</tr>
+<tr>
+<td>Planejamento</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/planejamento/cronograma_realizado/">Cronograma realizado</a></td>
+<td>Cronograma</td>
+<td>Kauã, Mylena e João</td>
+<td>Todos</td>
+<td>Mostrar o cronograma que realmente foi seguido</td>
+</tr>
+<tr>
+<td>Planejamento</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/planejamento/ferramentas/">Ferramentas</a></td>
+<td>Análise</td>
+<td>João</td>
+<td>Kauã</td>
+<td>Escolha de ferramentas para auxiliar no desenvolvimento do projeto</td>
+</tr>
+<tr>
+<td>Planejamento</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/planejamento/Aplicativo%20Selecionado/">Aplicativo selecionado para o projeto da disciplina</a></td>
+<td>Análise</td>
+<td>Todos</td>
+<td>Todos</td>
+<td>Cada um da equipe análisou um aplicativo para decidir qual seria o melhor para elicitar os requisitos</td>
+</tr>
+<tr>
+<td>Pré- rastreabilidade</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/pr%C3%A9-rastreabilidade/rich_picture/">Rich Picture</a></td>
+<td>Rich Picture</td>
+<td>Beatriz e Leonardo</td>
+<td>Leonardo, Beatriz e Ian</td>
+<td>Esclarecer funcionalidades e responsabilidades do sistema</td>
+</tr>
+<tr>
+<td>Elicitação</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/elicitacao/storytelling/">Storytelling</a></td>
+<td>Role-Playing</td>
+<td>Leonardo, Ana e Mylena</td>
+<td>Ian, Ana e Mylena</td>
+<td>Faz-se o uso da contagem de histórias a fim de elicitar funcionalidades do produto a partir da linguagem usual</td>
+</tr>
+<tr>
+<td>Elicitação</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/elicitacao/personas/">Personas</a></td>
+<td>Questionário</td>
+<td>Ian, Mylena, Beatriz e Leonardo</td>
+<td>João, Ian, Mylena, Beatriz, Ana</td>
+<td>Arquétipo hipotético desenvolvido a fim de retratar principais usuários do sistema e, assim, elicitar requisitos condizentes com sus necessidades</td>
+</tr>
+<tr>
+<td>Elicitação</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/elicitacao/questionario/">Questionário</a></td>
+<td>Questionário</td>
+<td>Mylena e Beatriz</td>
+<td>Kauã</td>
+<td>Fazer uma checagem do público alvo para a construção das personas</td>
+</tr>
+<tr>
+<td>Elicitação</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/elicitacao/Introspec%C3%A7%C3%A3o/">Introspecção</a></td>
+<td>Introspecção</td>
+<td>Beatriz e João</td>
+<td>Leonardo</td>
+<td>Idealizar o sistema ideal com base nas necessidades e desejos do usuário, definindo propriedades e funcionalidades para o desenvolvimento bem-sucedido do produto.</td>
+</tr>
+<tr>
+<td>Elicitação</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/elicitacao/glossario/">Glossário</a></td>
+<td>Glossário</td>
+<td>Leonardo</td>
+<td>Kauã</td>
+<td>Proporcionar uma compreensão clara e consistente dos termos usados, evitando ambiguidades e melhorando a comunicação entre as partes interessadas</td>
+</tr>
+<tr>
+<td>Elicitação</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/elicitacao/entrevista/">Entrevista</a></td>
+<td>Entrevista</td>
+<td>Ana</td>
+<td>Beatriz, Mylena e João</td>
+<td>Entrevista fechada: perguntas pré-definidas, requisitos específicos. Desenvolvimento de funcionalidades direcionado e consistente</td>
+</tr>
+<tr>
+<td>Elicitação</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/elicitacao/brainstorming/">Brainstorming</a></td>
+<td>Brainstorming</td>
+<td>Ian e Beatriz</td>
+<td>Ana</td>
+<td>Discussões que permitem uma abordagem colaborativa na elicitação de requisitos, resultando em maior compreensão e identificação de necessidades, desafios e soluções para o projeto</td>
+</tr>
+<tr>
+<td>Priorização</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/elicitacao/Prioriza%C3%A7%C3%A3o/FirstthingsFirst/">First things first</a></td>
+<td>First things first</td>
+<td>Kauã, Ana e João</td>
+<td>Mylena</td>
+<td>A ponderação entre benefícios, custos e riscos de cada requisito permite a classificação e priorização dos requisitos com base nas necessidades dos usuários</td>
+</tr>
+<tr>
+<td>Priorização</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/elicitacao/Prioriza%C3%A7%C3%A3o/MoScoW/">MoScoW</a></td>
+<td>MoScoW</td>
+<td>Beatriz e Ana</td>
+<td>Mylena</td>
+<td>A priorização de tarefas contribui para a eficiência do fluxo de entregas do projeto, garantindo que as atividades mais importantes sejam concluídas primeiro, otimizando o uso dos recursos disponíveis e maximizando a produtividade da equipe</td>
+</tr>
+<tr>
+<td>Priorização</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/elicitacao/Prioriza%C3%A7%C3%A3o/ThreeLevelScale/">Three Level Scale</a></td>
+<td>Escala de 3 níveis</td>
+<td>Ana e Kauã</td>
+<td>Mylena</td>
+<td>Priorizar os requisitos mais importantes</td>
+</tr>
+<tr>
+<td>Modelagem</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/modelagem/lexico/">Léxico</a></td>
+<td>Léxico</td>
+<td>João, Beatriz e Leonardo</td>
+<td>Ian e Ana</td>
+<td>A descrição de símbolos facilita a leitura e identificação de palavras no projeto, evitando ambiguidades e melhorando a comunicação</td>
+</tr>
+<tr>
+<td>Modelagem</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/modelagem/especificacao_suplementar/">Especificação suplementar</a></td>
+<td>FURPS+</td>
+<td>Ana e Kauã</td>
+<td>Leonardo e Ian</td>
+<td>Requisitos não-funcionais complementam casos de uso, abrangendo características como desempenho, segurança, usabilidade, garantindo a qualidade do software</td>
+</tr>
+<tr>
+<td>Modelagem</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/modelagem/cen%C3%A1rios/">Cenários</a></td>
+<td>Cenários</td>
+<td>Mylena, Leonardo e Beatriz</td>
+<td>Kauã, Ian e Ana</td>
+<td>Breve história retratando evento de utilização do sistema, desenvolvida com o fito de especificar descrição de requisito já elicitado</td>
+</tr>
+<tr>
+<td>Modelagem</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/modelagem/casos_de_uso/">Casos de uso</a></td>
+<td>Diagrama UML</td>
+<td>Ian, Leonardo e João</td>
+<td>Mylena</td>
+<td>No detalhamento dos atores de um sistema, são definidos os requisitos, escopo e interações padrão entre o usuário e o sistema. Além disso, é modelado o fluxo de acontecimentos, descrevendo as sequências de interações e ações entre os atores e o sistema</td>
+</tr>
+<tr>
+<td>Modelagem ágil</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/modelagem/nfr/">NFR</a></td>
+<td>NFR framework</td>
+<td>Beatriz, Mylena e Leonardo</td>
+<td>Ana</td>
+<td>Abordagem para representar e analisar requisitos funcionais e não funcionais de modo a auxiliar n desenvolvimento de soluções com maior eficiência</td>
+</tr>
+<tr>
+<td>Modelagem ágil</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/modelagem/agil/User_story/">User story</a></td>
+<td>Histórias de Usuário</td>
+<td>Kauã, João e Ana</td>
+<td>Mylena e Kauã</td>
+<td>Narrativas construídas de modo a apresentar o usuário em foco e, assim, definir soluções de software a uma problemática do mesmo</td>
+</tr>
+<tr>
+<td>Modelagem ágil</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/modelagem/agil/backlog/">Backlog</a></td>
+<td>Product Backlog</td>
+<td>Ana e Ian</td>
+<td>João</td>
+<td>A lista de funcionalidades desejadas para o produto é priorizada de acordo com o valor que cada requisito representa para o cliente. Isso envolve a definição do escopo, a identificação dos requisitos e a ordenação com base na importância percebida pelo cliente</td>
+</tr>
+<tr>
+<td>Análise de Requisitos</td>
+<td>[Verificação]</td>
+<td>Inspeção</td>
+<td>Beatriz, Leonardo, Kauã, Ian, Ana e João</td>
+<td>Todos</td>
+<td>Artefato desenvolvido como o intuito de revisar e corrigir artefatos criados pela equipe durante o decorrer do proejeto por meio de checklists</td>
+</tr>
+<tr>
+<td>Análise de Requisitos</td>
+<td>Validação</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/validacao/prototipo/">Protótipo</a></td>
+<td>Ana e Mylena</td>
+<td>João</td>
+<td>Validação de requisitos e especificações</td>
+</tr>
+<tr>
+<td>Análise de Requisitos</td>
+<td>Validação</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/validacao/comprovacao_informal/">Comprovação informal</a></td>
+<td>Ana e Mylena</td>
+<td>João</td>
+<td>Feedbacks a fim de validar os artefatos desenvolvidos</td>
+</tr>
+<tr>
+<td>Pós-rastreabilidade</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/pos-rastreabilidade/Forward-From/">Forward-from</a></td>
+<td>Forward-from</td>
+<td>Ana, Beatriz e Kauã</td>
+<td>João, Leonardo e Mylena</td>
+<td>Listagem de documentos obtidos no processo de elicitação e sua respectivas conexões</td>
+</tr>
+<tr>
+<td>Pós-rastreabilidade</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/pos-rastreabilidade/backward-from/">Backward-from</a></td>
+<td>Meta-modelo de Toranzo</td>
+<td>João, Leonardo e Mylena</td>
+<td>Ana, Beatriz e Kauã</td>
+<td>Apresentação dos requisitos elicitados durante o projeto e suas conexões por meio de tabelas, hyperlinks e elos de rastreabilidade</td>
+</tr>
+<tr>
+<td>Pós-rastreabilidade</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/pos-rastreabilidade/matriz/"> Matriz geral</a></td>
+<td>Matriz geral</td>
+<td>Ian</td>
+<td>João, Beatriz e Leonardo</td>
+<td>Represntação geral dos requisitos e ligações provenientes da documentação backward-from e forward-from</td>
+</tr>
+<tr>
+<td>Entrega Final</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/PostMortem/">Post mortem</a></td>
+<td>Post mortem</td>
+<td>Todos</td>
+<td>Todos</td>
+<td>Documentação com o intuito de passar feedbacks de como foi o projeto</td>
+</tr>
+<tr>
+<td>Entrega Final</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/entrega-final/">Documento final</a></td>
+<td>Inspecção</td>
+<td>Mylena, Kauã e Ana</td>
+<td>Todos</td>
+<td>Síntese do que foi produzido para a entrega final</td>
+</tr>
+<tr>
+<td>Contínua</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/">Gitpage</a></td>
+<td>MKdocs</td>
+<td>Mylena e Ana</td>
+<td>Kauã</td>
+<td>Página de documentação</td>
+</tr>
+<tr>
+<td>Contínua</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/atas/">Atas</a></td>
+<td>Atas</td>
+<td>Mylena</td>
+<td>Todos</td>
+<td>Acordos firmados durante as reuniões</td>
+</tr>
+<tr>
+<td>Contínua</td>
+<td>Gravações</td>
+<td>Gravação</td>
+<td>João</td>
+<td>Todos</td>
+<td>Apresentações das entregas e o que foi feito</td>
+</tr>
+<tr>
+<td>Contínua</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/entregas/">Entregas</a></td>
+<td>Release</td>
+<td>Mylena e Kauã</td>
+<td>Todos</td>
+<td>Resumo, release e gravação das entregas</td>
+</tr>
+</tbody>
+</table>
+<h2 id="7-sintese-dos-artefatos">7. Síntese dos Artefatos</h2>
+<h3 id="71-planejamento">7.1. Planejamento</h3>
+<p>A tabela 2 apresenta os artefatos referentes ao planejamento da equipe durante o semestre e as ferramentas utilizadas durante o projeto.</p>
+<center>
+
+| Artefato                                                                                                                    | Autor(es)           | Revisor(es) |
+| --------------------------------------------------------------------------------------------------------------------------- | ------------------- | ----------- |
+| [Aplicativo selecionado](https://requisitos-de-software.github.io/2023.1-Simplenote/planejamento/Aplicativo%20Selecionado/) | Beatriz e Leonardo  | Ian         |
+| [Cronograma](https://requisitos-de-software.github.io/2023.1-Simplenote/planejamento/cronograma/)                           | Kauã e João         | Beatriz     |
+| [Cronograma realizado](https://requisitos-de-software.github.io/2023.1-Simplenote/planejamento/cronograma_realizado/)       | Kauã ,Mylena e João | Beatriz     |
+| [Ferramentas](https://requisitos-de-software.github.io/2023.1-Simplenote/planejamento/ferramentas/)                         | João                | Kauã        |
+| [Metodologias](https://requisitos-de-software.github.io/2023.1-Simplenote/planejamento/metodologias/)                       | Kauã                | João        |
+
+<div style="text-align: center">
+<p> Tabela 2: Síntese dos artefatos de Planejamento <br/>Fonte: Autores.</p>
+</div>
+
+</center>
+
+<h3 id="72-pre-rastreabilidade">7.2. Pré-rastreabilidade</h3>
+<p>A tabela 3 apresenta os artefatos referentes ao planejamento da equipe durante o semestre e as ferramentas utilizadas durante o projeto.</p>
+<center>
+
+| Artefato                                                                                                                 | Autor(es) | Revisor(es)    |
+| ------------------------------------------------------------------------------------------------------------------------ | --------- | -------------- |
+| [Escolha do aplicativo](https://requisitos-de-software.github.io/2023.1-Simplenote/pr%C3%A9-rastreabilidade/escolha_rp/) | Mylena   | Ana           |
+| [Aplicativo Selecionado](https://requisitos-de-software.github.io/2023.1-Simplenote/planejamento/Aplicativo%20Selecionado/) | Beatriz, Leonardo   | Ian           |
+| [RichPicture](https://requisitos-de-software.github.io/2023.1-Simplenote/pr%C3%A9-rastreabilidade/rich_picture/)         | Beatriz e Leonardo  | Leonardo e Ian |
+
+
+<div style="text-align: center">
+<p> Tabela 3: Síntese dos artefatos de Pré Rastreabilidade <br/>Fonte: Autores.</p>
+</div>
+
+</center>
+
+<h3 id="73-elicitacao">7.3. Elicitação</h3>
+<p>A tabela 4 apresenta os artefatos referentes a etapa de elicitação e priorização utilizadas durante o projeto.</p>
+<center>
+
+| Artefato                                                                                                                            | Autor(es)     | Revisor(es)                                      |
+| ----------------------------------------------------------------------------------------------------------------------------------- | ------------- | ------------------------------------------------ |
+| [Brainstorming](https://requisitos-de-software.github.io/2023.1-Simplenote/elicitacao/brainstorming/)                               | Ian e Beatriz | Ana                                              |
+| [Entrevista](https://requisitos-de-software.github.io/2023.1-Simplenote/elicitacao/entrevista/)                                     | Ana           | Beatriz, Mylena e João                           |
+| [Glossário](https://requisitos-de-software.github.io/2023.1-Simplenote/elicitacao/glossario/)                                       | Leonardo      | Kauã                                             |
+| [Introspecção](https://requisitos-de-software.github.io/2023.1-Simplenote/elicitacao/Introspec%C3%A7%C3%A3o/)                       | Beatriz e João  | Leonardo                                         |
+| [Personas](https://requisitos-de-software.github.io/2023.1-Simplenote/elicitacao/personas/)                                         | Ian, Mylena, Beatriz e Leonardo  | João, Ian, Mylena, Beatriz, Ana   |
+| [Questionário](https://requisitos-de-software.github.io/2023.1-Simplenote/elicitacao/questionario/)                                 | Mylena e Beatriz    | Kauã                                             |
+| [Storytelling](https://requisitos-de-software.github.io/2023.1-Simplenote/elicitacao/storytelling/)                                 | Leonardo, Ana e Mylena      | Ian, Ana e Mylena                                              |
+| [FTF](https://requisitos-de-software.github.io/2023.1-Simplenote/elicitacao/Prioriza%C3%A7%C3%A3o/FirstthingsFirst/)                | Kauã, Ana e João   | Mylena                                           |
+| [TLE](https://requisitos-de-software.github.io/2023.1-Simplenote/elicitacao/Prioriza%C3%A7%C3%A3o/ThreeLevelScale/)                 | Ana e Kauã          | Mylena                                           |
+| [Moscow ](https://requisitos-de-software.github.io/2023.1-Simplenote/elicitacao/Prioriza%C3%A7%C3%A3o/MoScoW/)                      | Beatriz e Ana | Mylena                                           |
+| [Priorização Final](https://requisitos-de-software.github.io/2023.1-Simplenote/elicitacao/Prioriza%C3%A7%C3%A3o/priorizacao_final/) | Mylena        | Ana, Beatriz, Ian, João, Kauã, Leonardo e Mylena |
+
+<div style="text-align: center">
+<p> Tabela 4: Síntese dos artefatos de Elicitação e Priorização<br/>Fonte: Autores.</p>
+</div>
+
+</center>
+
+<h3 id="74-modelagem">7.4. Modelagem</h3>
+<p>A tabela 5 apresenta os artefatos referentes a etapa de modelagem desenvolvida no projeto.</p>
+<center>
+
+| Artefato                                                                                                                     | Autor(es)                 | Revisor(es) |
+| ---------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ----------- |
+| [Backlog](https://requisitos-de-software.github.io/2023.1-Simplenote/modelagem/agil/backlog/)                                | Ana e Ian                       | João        |
+| [Casos de Uso](https://requisitos-de-software.github.io/2023.1-Simplenote/modelagem/casos_de_uso/)                           | Ian, Leonardo e João                       | Mylena      |
+| [Cenários](https://requisitos-de-software.github.io/2023.1-Simplenote/modelagem/cen%C3%A1rios/)                              | Beatriz, Mylena e Leonardo         | Kauã        |
+| [Especificação Suplementar](https://requisitos-de-software.github.io/2023.1-Simplenote/modelagem/especificacao_suplementar/) | Ana e Kauã                | Leonardo    |
+| [Histórias de Usuário](https://requisitos-de-software.github.io/2023.1-Simplenote/modelagem/agil/User_story/)                | Kauã, João e Ana              | Mylena e Kauã      |
+| [Léxicos](https://requisitos-de-software.github.io/2023.1-Simplenote/modelagem/lexico/)                                      | Beatriz, João e Leonardo            | Ana e Ian      |
+| [NFR](https://requisitos-de-software.github.io/2023.1-Simplenote/modelagem/nfr/)                                             | Beatriz,Leonardo e Mylena | Ana         |
+
+<div style="text-align: center">
+<p> Tabela 5: Síntese dos artefatos de Modelagem <br/>Fonte: Autores.</p>
+</div>
+
+</center>
+
+<h3 id="75-pos-rastreabilidade">7.5. Pós-Rastreabilidade</h3>
+<p>A tabela 6 apresenta os artefatos referentes a etapa de pos-rastreabilidade desenvolvida durante o projeto.</p>
+<center>
+
+| Artefato                                                                                                       | Autor(es)              | Revisor(es)            |
+| -------------------------------------------------------------------------------------------------------------- | ---------------------- | ---------------------- |
+| [Backward-From](https://requisitos-de-software.github.io/2023.1-Simplenote/pos-rastreabilidade/backward-from/) | João,Leonardo e Mylena | Ana, Beatriz e Kauã    |
+| [Forward-From](https://requisitos-de-software.github.io/2023.1-Simplenote/pos-rastreabilidade/Forward-From/)   | Ana, Beatriz e Kauã    | João,Leonardo e Mylena |
+| [Matriz Geral](https://requisitos-de-software.github.io/2023.1-Simplenote/pos-rastreabilidade/matriz/)         | Ian                    | Kauã                   |
+
+<div style="text-align: center">
+<p> Tabela 6: Síntese dos artefatos de Pos-Rastreabilidade <br/>Fonte: Autores.</p>
+</div>
+
+</center>
+
+<h3 id="76-analise">7.6. Análise</h3>
+<p>A tabela 7 apresenta os artefatos referentes a etapa de analise desenvolvida durante o projeto.</p>
+<center>
+
+| Artefato                                                                                                                   | Autor(es)    | Revisor(es) |
+| -------------------------------------------------------------------------------------------------------------------------- | ------------ | ----------- |
+| [Comprovação Informal](https://requisitos-de-software.github.io/2023.1-Simplenote/analise/validacao/comprovacao_informal/) | Ana e Mylena | João        |
+| [Prototipação](https://requisitos-de-software.github.io/2023.1-Simplenote/analise/validacao/prototipo/)                    | Ana e Mylena | João        |
+
+<div style="text-align: center">
+<p> Tabela 7: Síntese dos artefatos de analise <br/>Fonte: Autores.</p>
+</div>
+
+</center>
+
+<h3 id="77-outros">7.7. Outros</h3>
+<p>A tabela 8 apresenta a sinteze dos artefatos que não foram especificados nas etapas passadas.</p>
+<center>
+
+|                                       Artefato                                        |                    Autor(es)                     |                   Revisor(es)                    |
+| :-----------------------------------------------------------------------------------: | :----------------------------------------------: | :----------------------------------------------: |
+|       [Atas](https://requisitos-de-software.github.io/2023.1-Simplenote/atas/)        |                      Mylena                      | Ana, Beatriz, Ian, João, Kauã, Leonardo e Mylena |
+|   [Entregas](https://requisitos-de-software.github.io/2023.1-Simplenote/entregas/)    |                      Mylena                      | Ana, Beatriz, Ian, João, Kauã, Leonardo e Mylena |
+| [Post Mortem](https://requisitos-de-software.github.io/2023.1-Simplenote/postmortem/) | Ana, Beatriz, Ian, João, Kauã, Leonardo e Mylena |                        -                         |
+|        [Read Me](https://requisitos-de-software.github.io/2023.1-Simplenote/)         |                       Kauã                       | Ana, Beatriz, Ian, João, Kauã, Leonardo e Mylena |
+
+<div style="text-align: center">
+<p> Tabela 8: Síntese dos artefatos que não se encaixaram nos topicos passados <br/>Fonte: Autores.</p>
+</div>
+
+</center>
+
+<h2 id="8-sintese-das-verificacoes-e-validacoes">8. Síntese das Verificações e Validações</h2>
+<h3 id="81-tabela-da-verificacao">8.1. Tabela da Verificação</h3>
+<p>Na parte de verificação foi feito um planejamento de um modelo e foi testado na <a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-grupo6/verificacao_grupo6/">verificação do grupo 06</a>. 
+No links abaixo é possível verificar a tabela de verificação do nosso grupo. </p>
+<table>
+<thead>
+<tr>
+<th>Artefatos</th>
+<th>Autor</th>
+<th>Revisor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-Grupo5/elicitacao/StoryTelling/">Storytelling</a></td>
+<td>Kauã</td>
+<td>João</td>
+</tr>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-Grupo5/elicitacao/Personas/">Personas</a></td>
+<td>Kauã</td>
+<td>João</td>
+</tr>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-Grupo5/elicitacao/Question%C3%A1rio/">Questionário</a></td>
+<td>Kauã</td>
+<td>João</td>
+</tr>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-Grupo5/elicitacao/Introspec%C3%A7%C3%A3o/">Introspecção</a></td>
+<td>João</td>
+<td>Kauã</td>
+</tr>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-Grupo5/elicitacao/glossario/">Glossário</a></td>
+<td>João</td>
+<td>Kauã</td>
+</tr>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-Grupo5/elicitacao/entrevista/">Entrevista</a></td>
+<td>João</td>
+<td>Kauã</td>
+</tr>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-Grupo5/elicitacao/brainstorming/">Brainstorming</a></td>
+<td>João</td>
+<td>Kauã</td>
+</tr>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-Grupo5/elicitacao/prioriza%C3%A7%C3%A3o/moscow/">Moscow</a></td>
+<td>Kauã</td>
+<td>João</td>
+</tr>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-Grupo5/elicitacao/prioriza%C3%A7%C3%A3o/FTF/">First things First</a></td>
+<td>Beatriz</td>
+<td>Ana</td>
+</tr>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-Grupo5/elicitacao/prioriza%C3%A7%C3%A3o/TLS/">Three Level Scale</a></td>
+<td>Beatriz</td>
+<td>Ana</td>
+</tr>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-Grupo5/modelagem/HistoriasDeUsuario/">Histórias de Usuário</a></td>
+<td>Beatriz</td>
+<td>Ana</td>
+</tr>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-Grupo5/modelagem/backlog/">Backlog</a></td>
+<td>Beatriz</td>
+<td>Kauã</td>
+</tr>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-Grupo5/modelagem/nfr/">NFR Framework</a></td>
+<td>Leonardo</td>
+<td>Beatriz</td>
+</tr>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-Grupo5/modelagem/lexicos/">Léxicos</a></td>
+<td>Leonardo</td>
+<td>Kauã</td>
+</tr>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-Grupo5/modelagem/Cenarios/">Cenários</a></td>
+<td>Leonardo</td>
+<td>Beatriz</td>
+</tr>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-Grupo5/modelagem/CasosDeUso/">Casos de Uso</a></td>
+<td>Beatriz</td>
+<td>Ana</td>
+</tr>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-Grupo5/modelagem/especificacao_suplementar/">Especificação Suplementar</a></td>
+<td>Leonardo</td>
+<td>Beatriz</td>
+</tr>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-Grupo5/planejamento/cronograma/">Cronograma pretendido</a></td>
+<td>Ian</td>
+<td>Kauã</td>
+</tr>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-Grupo5/planejamento/cronograma_realizado/">Cronograma realizado</a></td>
+<td>Ian</td>
+<td>Kauã</td>
+</tr>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-Grupo5/planejamento/ferramentas/">Ferramentas</a></td>
+<td>Ian</td>
+<td>Kauã</td>
+</tr>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-Grupo5/planejamento/metodologias/">Metodologia</a></td>
+<td>Ian</td>
+<td>Kauã</td>
+</tr>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-Grupo5/planejamento/app/">Escolha do  Aplicativo</a></td>
+<td>João</td>
+<td>Kauã</td>
+</tr>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/verificacao/verificacao-Grupo5/planejamento/rich_picture/">Rich Picture</a></td>
+<td>Ian</td>
+<td>Kauã</td>
+</tr>
+</tbody>
+</table>
+<h3 id="82-tabela-da-validacao">8.2 Tabela da Validação</h3>
+<table>
+<thead>
+<tr>
+<th>Artefatos</th>
+<th>Autor</th>
+<th>Revisor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/validacao/comprovacao_informal/">Comprovação Informal</a></td>
+<td>Ana e Mylena</td>
+<td>João</td>
+</tr>
+<tr>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/analise/validacao/prototipo/">Prototipação</a></td>
+<td>Ana e Mylena</td>
+<td>João</td>
+</tr>
+</tbody>
+</table>
+<h2 id="9-sintese-das-ferramentas">9. Síntese das Ferramentas</h2>
+<h3 id="91-tabela-de-ferramentas">9.1. Tabela de Ferramentas</h3>
+<table>
+<thead>
+<tr>
+<th>Ferramenta</th>
+<th>Artefatos</th>
+<th>Autor</th>
+<th>Revisor</th>
+<th>Justificativa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Github</td>
+<td>Todo o projeto</td>
+<td>-</td>
+<td>-</td>
+<td>Ferramenta de versionamento de projeto</td>
+</tr>
+<tr>
+<td>Youtube</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/entregas/">Entregas</a></td>
+<td>Mylena</td>
+<td>Ana, Beatriz, Ian, João, Kauã, Leonardo e Mylena</td>
+<td>Ferramenta utilizada para armazenar os vídeos das entregas</td>
+</tr>
+<tr>
+<td>Visual Studio Code</td>
+<td>Todo o projeto</td>
+<td>-</td>
+<td>-</td>
+<td>Editor de texto</td>
+</tr>
+<tr>
+<td>Lucidchart</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/pr%C3%A9-rastreabilidade/rich_picture/">RichPicture</a> e <a href="https://requisitos-de-software.github.io/2023.1-Simplenote/modelagem/nfr/">NFR</a></td>
+<td>Beatriz em ambos</td>
+<td>Ana em ambos</td>
+<td>Ferramenta utilizada para fazer a diagramação de partes do projeto</td>
+</tr>
+<tr>
+<td>This person doesnt exist</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/elicitacao/personas/">Personas</a></td>
+<td>Ian</td>
+<td>João</td>
+<td>IA utilizada para gerar rostos de pessoas inexistentes</td>
+</tr>
+<tr>
+<td>Figma</td>
+<td><a href="https://github.com/Requisitos-de-Software/2023.1-Simplenote/blob/main/docs/analise/validacao/prototipo.md">Protótipo</a></td>
+<td>Ana e Mylena</td>
+<td>João</td>
+<td>Ferramenta utilizada para fazer a prototipação do site</td>
+</tr>
+<tr>
+<td>OBS Studio</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/entregas/">Entregas</a></td>
+<td>Mylena</td>
+<td>Ana, Beatriz, Ian, João, Kauã, Leonardo e Mylena</td>
+<td>Ferramenta utilizada para realizar a gravação das entregas</td>
+</tr>
+<tr>
+<td>Whatsapp</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Ferramenta para comunicação da equipe</td>
+</tr>
+<tr>
+<td>Authentique</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/atas/">Atas</a></td>
+<td>Mylena</td>
+<td>Ana, Beatriz, Ian, João, Kauã, Leonardo e Mylena</td>
+<td>Site utilizado para realizar o controle de presença nas reuniões</td>
+</tr>
+<tr>
+<td>Discord</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Ferramenta utilizada para reunião dos grupos</td>
+</tr>
+<tr>
+<td>Canva</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/atas/">Atas</a></td>
+<td>Mylena</td>
+<td>Ana, Beatriz, Ian, João, Kauã, Leonardo e Mylena</td>
+<td>Site utilizado para confeccionar as atas</td>
+</tr>
+<tr>
+<td>Google Forms</td>
+<td><a href="https://requisitos-de-software.github.io/2023.1-Simplenote/elicitacao/questionario/">Questionário</a></td>
+<td>Mylena</td>
+<td>Kauã</td>
+<td>Site utilizado para hostear o questionário ditribuido na etapa de elicitação</td>
+</tr>
+</tbody>
+</table>
+<h2 id="10-sintese-dos-videos">10. Síntese dos Vídeos</h2>
+<table>
+<thead>
+<tr>
+<th>Etapa</th>
+<th>Participantes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.youtube.com/watch?v=nXzaoptwyAE">Entrega 1</a></td>
+<td>Ana, Beatriz, Ian, João, Kauã, Leonardo e Mylena</td>
+</tr>
+<tr>
+<td><a href="https://www.youtube.com/watch?v=vCXc620S378">Entrega 2</a></td>
+<td>Ana, Beatriz, Ian, João, Kauã, Leonardo e Mylena</td>
+</tr>
+<tr>
+<td><a href="https://www.youtube.com/watch?v=ezyo9w8Pc14">Entrega 3</a></td>
+<td>Ana, Beatriz, Ian, João, Kauã, Leonardo e Mylena</td>
+</tr>
+<tr>
+<td><a href="https://youtu.be/aXE6jrN7GOM">Entrega 4</a></td>
+<td>Ana, Beatriz, Ian, João, Kauã, Leonardo e Mylena</td>
+</tr>
+<tr>
+<td><a href="https://youtu.be/imGMXbuWMsQ">Entrega 5.1</a></td>
+<td>Ana, Beatriz, Ian, João, Kauã, Leonardo e Mylena</td>
+</tr>
+<tr>
+<td><a href="https://www.youtube.com/watch?v=CEK9yAVYg7g">Entrega 5.2</a></td>
+<td>Ana, Beatriz, Ian, João, Kauã, Leonardo e Mylena</td>
+</tr>
+<tr>
+<td><a href="https://www.youtube.com/watch?v=jzbskGjNgxk">Entrega 6</a></td>
+<td>Ana, Beatriz, Ian, João, Kauã, Leonardo e Mylena</td>
+</tr>
+<tr>
+<td>Gravação de Reunião<br><a href="https://youtu.be/xmTG8MMpY8Y">Ajustes finais entrega 1</a></td>
+<td>Ana, Ian, João, Kauã e Mylena</td>
+</tr>
+<tr>
+<td>Gravação de Reunião<br><a href="https://youtu.be/El_cwOEWp14">Início da etapa 3</a></td>
+<td>Ana, Beatriz, Ian, João, Kauã, Leonardo e Mylena</td>
+</tr>
+<tr>
+<td>Gravação de Reunião<br><a href="https://www.youtube.com/watch?v=t4xvg6oHiZI">Verificação e validação pt2</a></td>
+<td>Ana, Beatriz, Ian, João, Kauã, Leonardo e Mylena</td>
+</tr>
+<tr>
+<td><a href="https://youtu.be/LjZ1S_u8vkw">Reunião com PO</a> - Prototipação</td>
+<td>Ana e Product Owner</td>
+</tr>
+<tr>
+<td><a href="https://youtu.be/XFLfx9RYVpg">Reunião com PO</a> - <br> Histórias de Usuário e  Backlog</td>
+<td>Ana, Kauã e Product Owner</td>
+</tr>
+<tr>
+<td><a href="https://youtu.be/RKZUsCj00us">Reunião com a Equipe<br> de Desenvolvimento</a> - FTF</td>
+<td>Kauã e Equipe de Desenvolvimento</td>
+</tr>
+<tr>
+<td><a href="https://youtu.be/D4a7vA9LOOg">Reunião com PO</a> - FTF</td>
+<td>Kauã e Product Owner</td>
+</tr>
+<tr>
+<td>Elicitação de Requisitos - <br> <a href="https://youtu.be/9wbc4-v2vWc">Entreviata 1</a></td>
+<td>Ana e Entrevistado 1</td>
+</tr>
+<tr>
+<td>Elicitação de Requisitos - <br> <a href="https://youtu.be/x1gkQIUbq_k">Entrevista 2</a></td>
+<td>Ana e Entrevistado 1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bibliografia">Bibliografia</h3>
+<blockquote>
+<p>[1] Simplenote. Disponível em: https://simplenote.com/. Acesso em: 05 jun de 2023.</p>
+<p>[2] DAN. iOS, Android, and macOS Apps Now Open Source. 25 Ago 2016. Disponivel em: https://simplenote.com/blog/?s=open%20source. Acesso em: 05 jun de 2023.</p>
+</blockquote>
+<h2 id="historico-de-versao">Histórico de versão</h2>
+<table>
+<thead>
+<tr>
+<th>Versão</th>
+<th>Data</th>
+<th>Descrição</th>
+<th>Autor(es)</th>
+<th>Revisor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1.0</code></td>
+<td>04/07/2023</td>
+<td>Criação do artefato</td>
+<td>Mylena</td>
+<td>Kaua</td>
+</tr>
+<tr>
+<td><code>1.1</code></td>
+<td>04/07/2023</td>
+<td>Adição dos artefactos e revisores</td>
+<td>Kauã</td>
+<td>Ana</td>
+</tr>
+<tr>
+<td><code>1.2</code></td>
+<td>04/07/2023</td>
+<td>Síntese dos Videos</td>
+<td>Ana</td>
+<td>Kauã</td>
+</tr>
+<tr>
+<td><code>1.3</code></td>
+<td>04/07/2023</td>
+<td>Conclusão e atualização das tabelas</td>
+<td>João</td>
+<td>Kauã</td>
+</tr>
+<tr>
+<td><code>2.0</code></td>
+<td>05/07/2023</td>
+<td>Versão final</td>
+<td>Mylena</td>
+<td>Beatriz</td>
+</tr>
+<tr>
+<td><code>2.1</code></td>
+<td>05/07/2023</td>
+<td>Ajustes de Revisão</td>
+<td>Beatriz</td>
+<td>Mylena</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
+        
+          
+          <a href="../analise/verificacao/verificacao-grupo6/template/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Template">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Template
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../PostMortem/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Post mortem">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              <div class="md-ellipsis">
+                Post mortem
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Simplenote
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Requisitos-de-Software/2023.1-Simplenote" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["toc.integrate", "navigation.tabs", "navigation.tabs.sticky", "navigation.footer"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>
